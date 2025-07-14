@@ -1,0 +1,173 @@
+/* *{
+  margin: 0px;
+  padding: 1px;
+  background-color:rgb(161, 219, 227);
+  color:rgb(42, 39, 39);
+}
+header{
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  background-color: rgb(110, 200, 194);
+}
+.img_deg{
+  margin-left:50px ;
+  float:left;
+  width:650px;
+  height:650px ;
+  border-radius: 50%;
+}
+.img_deg:hover{
+  transform: translate(10px, 5px);
+}
+.img_deg2{
+  float: right;
+  margin-top: 70px;
+  margin-right: 60px;
+  width:650px;
+  height:650px ;
+  border-radius: 50%;
+}
+.img_deg2:hover{
+  transform: translate(10px, 5px);
+}
+h2{
+  color: black;
+  font-size: 30px;
+} */
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+  font-family : "Poppins", sans-serif;
+}
+body {
+  display : flex;
+  align-items : center;
+  justify-content : center;  
+  background-color: #ac90dc;
+  min-height : 800px;
+}
+
+.container {
+  position : relative;
+  width : 1300px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px; 
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); 
+}
+
+.container .card {
+  position: relative;
+  max-width : 375px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+   display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+  grid-template-rows: max-content 200px 1fr;
+}
+.container .card:hover {
+  height : 500px;    
+}
+.container .card .image {
+  position : relative;
+  width : 300px;
+  height : 270px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 150%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+.container .card .image1 {
+  position : relative;
+  width : 300px;
+  height : 270px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image1 img {
+  width : 110%;
+  height:100% ;
+  border-radius : 15px;
+}
+.container .card .image2 {
+  position : relative;
+  width : 300px;
+  height : 250px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image2 img {
+  width : 110%;
+  height: 80% ;
+  border-radius : 15px;
+}
+.container .card .image3 {
+  position : relative;
+  width : 300px;
+  height : 250px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image3 img {
+  width : 110%;
+  height: 80% ;
+  border-radius : 15px;
+}
+.container .card .image4 {
+  position : relative;
+  width : 300px;
+  height : 250px;
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container .card .image4 img {
+  width : 110%;
+  height: 80% ;
+  border-radius : 15px;
+}
